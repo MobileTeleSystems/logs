@@ -2,7 +2,7 @@ FROM node:17-alpine AS build
 
 WORKDIR /app
 
-COPY package*.json tsconfig*.json nest-cli.json .npmrc ./
+COPY package*.json tsconfig*.json nest-cli.json ./
 RUN npm ci
 
 COPY ./src ./src
@@ -18,7 +18,7 @@ ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /app
-COPY package*.json .npmrc ./
+COPY package*.json ./
 RUN npm ci --omit=dev
 
 COPY --from=build /app/dist ./dist
