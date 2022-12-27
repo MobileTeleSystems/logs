@@ -2,7 +2,7 @@ import { JsonLogger } from "../../services/json-logger.service";
 import { Body, Headers, Controller, Post } from "@nestjs/common";
 import {LogLevels} from "../../enums/LogLevels";
 
-@Controller("log")
+@Controller("logs")
 export class LogController {
     constructor(private readonly logger: JsonLogger) {}
 
