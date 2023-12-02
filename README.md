@@ -16,7 +16,7 @@ docker run -it --rm -p 3000:3000 mtsrus/logs
 Now you can check the work with the command:
 
 ```sh
-curl -d '{"message": "Sample log"}' -X POST http://localhost:3000/logs/log
+curl -d '{"message": "Sample log"}' -H 'Content-Type: application/json' -X POST http://localhost:3000/logs/log
 ```
 
 JSON should be displayed in the container console. This JSON must be read by the Logging Driver and sent to the logging system.
