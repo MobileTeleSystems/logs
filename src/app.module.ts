@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { LogController } from "./constrollers/log/log.controller";
+import { LogController } from "./controllers/log/log.controller";
 import { PrometheusModule } from "@willsoto/nestjs-prometheus";
 import { JsonLogger } from "./services/json-logger.service";
 
