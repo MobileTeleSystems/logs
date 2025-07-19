@@ -17,8 +17,6 @@ All notable changes to this project will be documented in this file.
 
 - Transfer to github
 - Add github action build config
-- Remove dead code
-- Clean dead code
 - Setup build in github actions
 - Add legacy path in log controller, fix readme curl sample
 
