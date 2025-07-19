@@ -1,6 +1,6 @@
 import { JsonLogger } from "../../services/json-logger.service";
 import { Body, Headers, Controller, Post } from "@nestjs/common";
-import {LogLevels} from "../../enums/LogLevels";
+import { LogLevels } from "../../enums/LogLevels";
 
 // path / log its legacy, will remove soon
 @Controller(["log", "logs"])
@@ -37,8 +37,11 @@ export class LogController {
 
     private proceeLog(body: object, headers: object, logLevel: LogLevels) {
         const userInfo = {
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             userAgent: headers["user-agent"] ?? "not set",
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             userIp: headers["x-real-ip"] ?? "not set",
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             traceId: headers["x-trace-id"],
         };
 

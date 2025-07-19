@@ -8,7 +8,8 @@ RUN npm ci
 COPY ./src ./src
 COPY ./test ./test
 
-# RUN npm run test
+RUN npm run test
+RUN npm run test:e2e
 RUN npm run build
 
 
