@@ -16,9 +16,9 @@ describe("AppController (e2e)", () => {
         await app.init();
     });
 
-    it("/log (POST)", () => {
+    it("/log/log (POST)", () => {
         return request(app.getHttpServer())
-            .post("/log")
+            .post("/log/log")
             .send({ foo: "bar" })
             .set("user-agent", "test-agent")
             .set("x-real-ip", "127.0.0.1")
@@ -27,9 +27,9 @@ describe("AppController (e2e)", () => {
             .expect("");
     });
 
-    it("/warn (POST)", () => {
+    it("/log/warn (POST)", () => {
         return request(app.getHttpServer())
-            .post("/warn")
+            .post("/log/warn")
             .send({ foo: "bar" })
             .set("user-agent", "test-agent")
             .set("x-real-ip", "127.0.0.1")
@@ -38,9 +38,9 @@ describe("AppController (e2e)", () => {
             .expect("");
     });
 
-    it("/error (POST)", () => {
+    it("/log/error (POST)", () => {
         return request(app.getHttpServer())
-            .post("/error")
+            .post("/log/error")
             .send({ foo: "bar" })
             .set("user-agent", "test-agent")
             .set("x-real-ip", "127.0.0.1")
@@ -49,9 +49,9 @@ describe("AppController (e2e)", () => {
             .expect("");
     });
 
-    it("/debug (POST)", () => {
+    it("/log/debug (POST)", () => {
         return request(app.getHttpServer())
-            .post("/debug")
+            .post("/log/debug")
             .send({ foo: "bar" })
             .set("user-agent", "test-agent")
             .set("x-real-ip", "127.0.0.1")
@@ -60,9 +60,9 @@ describe("AppController (e2e)", () => {
             .expect("");
     });
 
-    it("/verbose (POST)", () => {
+    it("/log/verbose (POST)", () => {
         return request(app.getHttpServer())
-            .post("/verbose")
+            .post("/log/verbose")
             .send({ foo: "bar" })
             .set("user-agent", "test-agent")
             .set("x-real-ip", "127.0.0.1")
