@@ -45,4 +45,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: mtsrus/logs:latest, mtsrus/logs:1, mtsrus/logs:1.0, mtsrus/logs:1.0.2
+          tags: mtsrus/logs:latest, mtsrus/logs:1, mtsrus/logs:1.1, mtsrus/logs:1.1.5
