@@ -34,15 +34,26 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org/
-
       - run: git config --global user.email "elabutin@mts.ru"
       - run: git config --global user.name "Eugene Labutin"
       - run: npm ci
       - run: npm run release
       - run: git push && git push --tags
 
+      - name: Get version from package.json
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "MAJOR=$(echo $VERSION | cut -d. -f1)" >> $GITHUB_ENV
+          echo "MINOR=$(echo $VERSION | cut -d. -f2)" >> $GITHUB_ENV
+          echo "PATCH=$(echo $VERSION | cut -d. -f3)" >> $GITHUB_ENV
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: mtsrus/logs:latest, mtsrus/logs:1, mtsrus/logs:1.1, mtsrus/logs:1.1.5
+          tags: |
+            mtsrus/logs:latest
+            mtsrus/logs:${{ env.MAJOR }}
+            mtsrus/logs:${{ env.MAJOR }}.${{ env.MINOR }}
+            mtsrus/logs:${{ env.MAJOR }}.${{ env.MINOR }}.${{ env.PATCH }}
