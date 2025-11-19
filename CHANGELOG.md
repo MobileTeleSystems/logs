@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.8] - 2025-11-19
+
+### ⚙️ Miscellaneous Tasks
+
+- Update package.json and package-lock.json dependencies
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
 ## [1.1.7] - 2025-07-20
 
 ## [1.1.6] - 2025-07-20

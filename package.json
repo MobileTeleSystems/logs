@@ -1,6 +1,6 @@
 {
   "name": "logs",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "The microservice contains an API that accepts any JSON object from the browser and outputs it to the container's stdout",
   "author": "MobileTeleSystems",
   "homepage": "https://github.com/MobileTeleSystems/logs",
