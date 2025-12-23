@@ -37,6 +37,21 @@ updates:
     assignees:
       - "LabEG"
 
+  # Docker
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+      time: "09:00"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+    assignees:
+      - "LabEG"
+
   # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
