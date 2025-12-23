@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-12-23
+
+### 🚀 Features
+
+- Add issue templates for bug reports and feature requests, enhance PR template, and implement security policy
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
 ## [1.1.8] - 2025-11-19
 
 ### ⚙️ Miscellaneous Tasks
