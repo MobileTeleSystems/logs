@@ -8,6 +8,8 @@ name: Docker
 on:
   push:
     branches: [ main ]
+  schedule:
+    - cron: '0 12 1-7 1,7 4'  # First Thursday of January and July at 12:00 UTC
   workflow_dispatch:
 
 jobs:
