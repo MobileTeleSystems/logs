@@ -36,5 +36,5 @@ jobs:
         run: npm audit --production
         continue-on-error: true
 
-      - name: Verify package can be built
-        run: npm pack --dry-run
+      - name: Verify Docker image can be built
+        run: docker build -t logs:test .
