@@ -45,7 +45,7 @@ Test the endpoint:
 ```bash
 curl -d '{"message": "Sample log", "timestamp": "2025-12-23T10:30:00Z"}' \
      -H "Content-Type: application/json" \
-     -X POST http://localhost:3000/log/log
+     -X POST http://localhost:3000/logs/log
 ```
 
 The JSON payload will be written to stdout, ready to be consumed by your logging driver.
@@ -122,11 +122,11 @@ All endpoints accept POST requests with JSON payloads.
 
 | Endpoint | Log Level | Description |
 |----------|-----------|-------------|
-| `/log/debug` | DEBUG | Detailed debugging information |
-| `/log/verbose` | VERBOSE | Verbose/trace level logs |
-| `/log/log` | INFO | General informational messages |
-| `/log/warn` | WARNING | Warning messages for potential issues |
-| `/log/error` | ERROR | Error messages for failures |
+| `/logs/debug` | DEBUG | Detailed debugging information |
+| `/logs/verbose` | VERBOSE | Verbose/trace level logs |
+| `/logs/log` | INFO | General informational messages |
+| `/logs/warn` | WARNING | Warning messages for potential issues |
+| `/logs/error` | ERROR | Error messages for failures |
 
 ### Request Format
 
@@ -252,7 +252,7 @@ class LogService {
 }
 
 // Usage
-const logger = new LogService('http://localhost:3000/log');
+const logger = new LogService('http://localhost:3000/logs');
 logger.info('User logged in', { userId: '123' });
 logger.error('Payment failed', new Error('Timeout'), { orderId: 'order-456' });
 ```
