@@ -38,7 +38,7 @@
     "@nestjs/platform-express": "^11.1.9",
     "@willsoto/nestjs-prometheus": "^6.0.2",
     "reflect-metadata": "^0.2.2",
-    "rimraf": "^6.1.0",
+    "rimraf": "^6.1.2",
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
