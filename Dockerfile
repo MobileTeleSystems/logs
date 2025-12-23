@@ -1,4 +1,4 @@
-FROM node:24-alpine AS build
+FROM node:25-alpine AS build
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ RUN npm run test:e2e
 RUN npm run build
 
 
-FROM node:24-alpine AS production
+FROM node:25-alpine AS production
 
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
