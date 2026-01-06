@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.12] - 2026-01-06
+
+### ⚙️ Miscellaneous Tasks
+
+- *(logs)* Release logs@1.2.11
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
 ## [1.2.11] - 2026-01-05
 
 ### ⚙️ Miscellaneous Tasks
