@@ -2,6 +2,84 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.14] - 2026-01-08
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.13] - 2026-01-07
+
+### ⚙️ Miscellaneous Tasks
+
+- *(logs)* Release logs@1.2.12
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.12] - 2026-01-06
+
+### ⚙️ Miscellaneous Tasks
+
+- *(logs)* Release logs@1.2.11
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.11] - 2026-01-05
+
+### ⚙️ Miscellaneous Tasks
+
+- *(logs)* Release logs@1.2.10
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.10] - 2026-01-04
+
+### ⚙️ Miscellaneous Tasks
+
+- *(logs)* Release logs@1.2.9
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.9] - 2026-01-03
+
+### ⚙️ Miscellaneous Tasks
+
+- *(logs)* Release logs@1.2.8
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.8] - 2026-01-02
+
+### ⚙️ Miscellaneous Tasks
+
+- *(logs)* Release logs@1.2.7
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.7] - 2026-01-01
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.2.6] - 2025-12-23
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
 ## [1.2.5] - 2025-12-23
 
 # Changelog
